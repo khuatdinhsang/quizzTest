@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "sang",
+    "gender": "male",
+    "className": "SE1644",
+    "age": 18,
+    "color": "white, black"
+  },
+  {
+    "id": 2,
+    "name": "liem",
+    "gender": "female",
+    "className": "SE1645",
+    "age": 20,
+    "color": "red, black"
+  },
+  {
+    "id": 3,
+    "name": "nam",
+    "gender": "male",
+    "className": "SE1643",
+    "age": 10,
+    "color": "red, white"
+  }
+]

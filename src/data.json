@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Minh",
+    "gender": "Male",
+    "color": "red,orange",
+    "age": 18,
+    "class": "SE001"
+  },
+  {
+    "id": 2,
+    "name": "Tuan",
+    "gender": "Male",
+    "color": "red,blue",
+    "age": 20,
+    "class": "SE002"
+  },
+  {
+    "id": 3,
+    "name": "Binh",
+    "gender": "Male",
+    "color": "red,yellow",
+    "age": 21,
+    "class": "SE001"
+  },
+  {
+    "id": 4,
+    "name": "Le",
+    "gender": "Female",
+    "color": "brown,blue",
+    "age": 4,
+    "class": "SE003"
+  },
+  {
+    "id": 5,
+    "name": "Hong",
+    "gender": "Female",
+    "color": "red,white",
+    "age": 20,
+    "class": "SE001"
+  }
+]

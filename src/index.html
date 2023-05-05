@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <style>
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <input placeholder="Enter name to search" id="search" />
+    <button onClick="searchStudent()">Search</button>
+    <div id="root"></div>
+    <input type="text" placeholder="add di em" id="add" />
+    <button onClick="addStudent()">ADD</button>
+    <script>
+        const data = [
+            { id: 1, name: 'Hoang' },
+            { id: 2, name: 'Minh' },
+            { id: 3, name: 'Yen' },
+            { id: 4, name: 'Minh Nam' }
+        ]
+
+
+
+        function show() {
+            var ul = `
+            <ul>
+            `
+            for (var i = 0; i < data.length; i++) {
+                ul += `
+                    <li>${data[i].id}. ${data[i].name}</li>
+                    <li><button onClick="deleteStudent(${data[i].id})">Delete</button>
+                        <input style="display:none" id="id" value="${data[i].id}" />
+                        <button onClick="editStudent(${data[i].id})">Edit</button>
+                        </li>
+                    `
+            }
+            ul += `</ul>`
+            const root = document.querySelector("#root");
+            root.innerHTML = ul
+        }
+
+        show()
+        const addStudent = () => {
+            const newStudent = document.querySelector("#add").value;
+            let idEditBtn = document.querySelector("#id").value;
+            console.log(idEditBtn)
+            let idMax = 0;
+            for (let i = 0; i < data.length; i++) {
+                if (data[i].id > idMax) {
+                    idMax = data[i].id;
+                }
+            }
+            data.push({
+                id: idMax + 1,
+                name: newStudent
+            })
+
+
+
+            document.querySelector("#add").value = '';
+            show()
+        }
+        const deleteStudent = (id) => {
+            for (let i = 0; i < data.length; i++) {
+                if (data[i].id == id) {
+                    data.splice(i, 1);
+                    show();
+                }
+            }
+        }
+        const editStudent = (id) => {
+            const newStudent = data.find(c => c.id === id);
+            document.querySelector("#add").value = newStudent.name;
+            document.querySelector("#id").value = newStudent.id;
+        }
+        const searchStudent = () => {
+            var search = document.querySelector("#search").value;
+            let check = false;
+            var ul = `
+            <ul>
+            `
+            for (var i = 0; i < data.length; i++) {
+                if (data[i].name.toLocaleLowerCase().includes(search.toLocaleLowerCase())) {
+                    check = true;
+                    ul += `
+                    <li>${data[i].id}. ${data[i].name}</li>
+                    `
+                }
+            }
+            ul += `</ul>`
+            const root = document.querySelector("#root");
+            if (check)
+                root.innerHTML = ul
+            else
+                root.innerHTML = 'deo co thang nao ca'
+        }
+    </script>
+
+</body>
+
+</html>
