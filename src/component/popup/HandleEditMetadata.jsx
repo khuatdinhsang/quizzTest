@@ -27,6 +27,7 @@ const HandleEditMetadata = (props) => {
     boxShadow: 24,
     p: 3,
     borderRadius: "5px",
+    overFlow: "scroll",
   };
   return (
     <Modal

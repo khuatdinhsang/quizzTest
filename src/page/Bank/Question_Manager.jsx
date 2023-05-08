@@ -32,7 +32,7 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import DeleteForeverOutlinedIcon from "@mui/icons-material/DeleteForeverOutlined";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import { Link } from "react-router-dom";
-const Bank1 = () => {
+const Question_Manager = () => {
   const [openExcel, setOpenExcel] = React.useState(false);
   const handleOpenExcel = () => setOpenExcel(true);
   const handleCloseExcel = () => setOpenExcel(false);
@@ -370,4 +370,4 @@ const Bank1 = () => {
   );
 };
 
-export default Bank1;
+export default Question_Manager;

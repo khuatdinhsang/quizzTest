@@ -7,11 +7,10 @@ const Editor = () => {
     const editor = useRef(null);
     const [content, setContent] = useState('');
     return (
-        <Box >
+        <Box sx={{ height: 'auto' }}>
             <JoditEditor
                 ref={editor}
                 value={content}
-                placeholder="con cac"
                 onChange={(newContent) => setContent(newContent)}
             />
         </Box>
