@@ -1,19 +1,23 @@
 import {
   Box,
   Button,
-  Checkbox,
+  Grid,
+  MenuItem,
   Modal,
-  Radio,
   Stack,
+  TextField,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useRef, useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import Editor from "../../page/library/Editor";
 import StarIcon from "@mui/icons-material/Star";
 import ManagerQuestion from "../ManagerQuestion";
+import JoditEditor from "jodit-react";
 
-const TrueFalse = () => {
+const Selected_Word = () => {
+  const editor = useRef(null);
+  const [content, setContent] = useState("");
   const style = {
     position: "absolute",
     top: "50%",
@@ -26,6 +30,9 @@ const TrueFalse = () => {
     p: 7,
     borderRadius: "5px",
     overflow: "auto",
+  };
+  const handleContent = () => {
+    alert("hello");
   };
   return (
     <Modal open={true} aria-labelledby="modal-modal-title">
@@ -49,7 +56,6 @@ const TrueFalse = () => {
             right: "10px",
           }}
         />
-        <ManagerQuestion />
         <Typography
           sx={{
             color: "#484848",
@@ -64,49 +70,27 @@ const TrueFalse = () => {
           />
         </Typography>
         <Editor />
+        <ManagerQuestion />
 
-        <Stack sx={{ marginTop: "30px" }}>
-          <Stack flexDirection="row">
-            <Typography sx={{ marginRight: "80px" }}>Đáp án</Typography>
-            <Typography>Lựa chọn</Typography>
-          </Stack>
-          <form>
-            <Stack sx={{ marginTop: "20px" }} flexDirection="row">
-              <Radio name="correctQuestion" value="true" />
-              <Typography
-                sx={{
-                  width: "200px",
-                  height: "50px",
-                  paddingLeft: "10px",
-                  border: "1px solid #ccc",
-                  textAlign: "left",
-                  lineHeight: "50px",
-                  marginLeft: "80px",
-                  bgcolor: "#FFF9F9",
-                }}
-              >
-                Đúng
-              </Typography>
-            </Stack>
-            <Stack sx={{ marginTop: "20px" }} flexDirection="row">
-              <Radio name="correctQuestion" value="false" />
-              <Typography
-                sx={{
-                  width: "200px",
-                  height: "50px",
-                  paddingLeft: "10px",
-                  border: "1px solid #ccc",
-                  textAlign: "left",
-                  lineHeight: "50px",
-                  marginLeft: "80px",
-                  bgcolor: "#FFF9F9",
-                }}
-              >
-                Sai
-              </Typography>
-            </Stack>
-          </form>
-        </Stack>
+        <Box>
+          <Typography
+            sx={{
+              color: "#525252",
+              fontWeight: "700",
+              marginTop: "50px",
+            }}
+          >
+            Đáp án:
+          </Typography>
+          <Box sx={{ height: "auto" }}>
+            <JoditEditor
+              ref={editor}
+              value={content}
+              onChange={(newContent) => setContent(newContent)}
+              onMouseUp={handleContent}
+            />
+          </Box>
+        </Box>
         <Box mt={3} align="right">
           <Button
             sx={{
@@ -138,9 +122,10 @@ const TrueFalse = () => {
             Lưu
           </Button>
         </Box>
+        <h1>{content}</h1>
       </Box>
     </Modal>
   );
 };
 
-export default TrueFalse;
+export default Selected_Word;

@@ -148,32 +148,6 @@ const ManagerQuestion = () => {
           <MenuItem value="2">Không</MenuItem>
         </TextField>
       </Box>
-      <Box>
-        <Typography
-          sx={{
-            fontSize: "16px",
-            color: "#525252",
-            fontWeight: "600",
-            position: "relative",
-          }}
-        >
-          Điểm:
-        </Typography>
-
-        <TextField
-          size="small"
-          sx={{ marginTop: "10px", width: "150px" }}
-          required
-          select
-          value="0"
-        >
-          <MenuItem value="0">Loại câu hỏi</MenuItem>
-          <MenuItem value="1" selected>
-            Có
-          </MenuItem>
-          <MenuItem value="2">Không</MenuItem>
-        </TextField>
-      </Box>
     </Stack>
   );
 };

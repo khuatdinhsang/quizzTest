@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Grid,
+  Input,
   MenuItem,
   Modal,
   Stack,
@@ -20,12 +21,13 @@ const Compare_Number = () => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
+    width: "1200px",
+    height: "700px",
     bgcolor: "background.paper",
     boxShadow: 24,
-    width: "1200px",
     p: 7,
     borderRadius: "5px",
-    border: "none",
+    overflow: "auto",
   };
   return (
     <Modal open={true} aria-labelledby="modal-modal-title">
@@ -112,7 +114,13 @@ const Compare_Number = () => {
                 marginLeft: "35px",
               }}
             >
-              21
+              <input
+                style={{
+                  width: "50%",
+                  border: "none",
+                  outline: "none",
+                }}
+              />
             </Typography>
           </Stack>
           <Stack
@@ -152,8 +160,13 @@ const Compare_Number = () => {
                 marginLeft: "35px",
               }}
             >
-              {" "}
-              21
+              <input
+                style={{
+                  width: "50%",
+                  border: "none",
+                  outline: "none",
+                }}
+              />
             </Typography>
           </Stack>
         </Box>

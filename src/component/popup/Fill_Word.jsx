@@ -1,19 +1,11 @@
-import {
-  Box,
-  Button,
-  Checkbox,
-  Modal,
-  Radio,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Input, Modal, Stack, Typography } from "@mui/material";
 import React from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import Editor from "../../page/library/Editor";
 import StarIcon from "@mui/icons-material/Star";
 import ManagerQuestion from "../ManagerQuestion";
 
-const TrueFalse = () => {
+const Fill_Word = () => {
   const style = {
     position: "absolute",
     top: "50%",
@@ -49,7 +41,6 @@ const TrueFalse = () => {
             right: "10px",
           }}
         />
-        <ManagerQuestion />
         <Typography
           sx={{
             color: "#484848",
@@ -64,49 +55,23 @@ const TrueFalse = () => {
           />
         </Typography>
         <Editor />
-
-        <Stack sx={{ marginTop: "30px" }}>
-          <Stack flexDirection="row">
-            <Typography sx={{ marginRight: "80px" }}>Đáp án</Typography>
-            <Typography>Lựa chọn</Typography>
-          </Stack>
-          <form>
-            <Stack sx={{ marginTop: "20px" }} flexDirection="row">
-              <Radio name="correctQuestion" value="true" />
-              <Typography
-                sx={{
-                  width: "200px",
-                  height: "50px",
-                  paddingLeft: "10px",
-                  border: "1px solid #ccc",
-                  textAlign: "left",
-                  lineHeight: "50px",
-                  marginLeft: "80px",
-                  bgcolor: "#FFF9F9",
-                }}
-              >
-                Đúng
-              </Typography>
-            </Stack>
-            <Stack sx={{ marginTop: "20px" }} flexDirection="row">
-              <Radio name="correctQuestion" value="false" />
-              <Typography
-                sx={{
-                  width: "200px",
-                  height: "50px",
-                  paddingLeft: "10px",
-                  border: "1px solid #ccc",
-                  textAlign: "left",
-                  lineHeight: "50px",
-                  marginLeft: "80px",
-                  bgcolor: "#FFF9F9",
-                }}
-              >
-                Sai
-              </Typography>
-            </Stack>
-          </form>
-        </Stack>
+        <ManagerQuestion />
+        <Box sx={{ marginTop: "50px" }}>
+          <Typography
+            sx={{
+              color: "#484848",
+              fontWeight: "600",
+              position: "relative",
+              marginBottom: "10px",
+            }}
+          >
+            Câu hỏi:
+            <StarIcon
+              sx={{ color: "red", fontSize: "10px", position: "absolute" }}
+            />
+          </Typography>
+          <Editor />
+        </Box>
         <Box mt={3} align="right">
           <Button
             sx={{
@@ -143,4 +108,4 @@ const TrueFalse = () => {
   );
 };
 
-export default TrueFalse;
+export default Fill_Word;
