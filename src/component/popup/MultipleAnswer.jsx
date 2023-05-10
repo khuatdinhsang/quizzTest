@@ -2,6 +2,7 @@ import "../../App.css";
 import {
   Box,
   Button,
+  Checkbox,
   FormControlLabel,
   Icon,
   Modal,
@@ -18,7 +19,7 @@ import Editor from "../../page/library/Editor";
 import { useState } from "react";
 import ManagerQuestion from "../ManagerQuestion";
 
-const OneAnswer = () => {
+const MultipleAnswer = () => {
   const [isSaveQuestion, setIsSaveQuestion] = useState(false);
   const handleEditQuestion = () => setIsSaveQuestion(true);
   const handleCloseEditQuestion = () => setIsSaveQuestion(false);
@@ -114,7 +115,11 @@ const OneAnswer = () => {
             >
               <Box sx={styleAnswer}>A</Box>
               <Box sx={{ marginTop: "-10px", flex: 1 }}>
-                <FormControlLabel value="female" control={<Radio />} checked />
+                <FormControlLabel
+                  value="female"
+                  control={<Checkbox />}
+                  checked
+                />
               </Box>
               <Box sx={{ flex: 70 }}>
                 <Editor />
@@ -129,7 +134,7 @@ const OneAnswer = () => {
             >
               <Box sx={styleAnswer}>B</Box>
               <Box sx={{ marginTop: "-10px", flex: 1 }}>
-                <FormControlLabel value="female" control={<Radio />} />
+                <FormControlLabel value="female" control={<Checkbox />} />
               </Box>
               <Box sx={{ flex: 70 }}>
                 <Editor />
@@ -144,7 +149,7 @@ const OneAnswer = () => {
             >
               <Box sx={styleAnswer}>C</Box>
               <Box sx={{ marginTop: "-10px", flex: 1 }}>
-                <FormControlLabel value="female" control={<Radio />} />
+                <FormControlLabel value="female" control={<Checkbox />} />
               </Box>
               <Box sx={{ flex: 70 }}>
                 <Editor />
@@ -159,7 +164,7 @@ const OneAnswer = () => {
             >
               <Box sx={styleAnswer}>D</Box>
               <Box sx={{ marginTop: "-10px", flex: 1 }}>
-                <FormControlLabel value="female" control={<Radio />} />
+                <FormControlLabel value="female" control={<Checkbox />} />
               </Box>
               <Box sx={{ flex: 70 }}>
                 <Editor sx={{ height: "200px" }} />
@@ -286,4 +291,4 @@ const OneAnswer = () => {
   );
 };
 
-export default OneAnswer;
+export default MultipleAnswer;

@@ -13,6 +13,10 @@ import Fill_Word from "./component/popup/Fill_Word";
 import Selected_Word from "./component/popup/Selected_Word";
 import Record from "./component/popup/Record";
 import Select_Question from "./page/question/Select_Question";
+import TrueFalse_Question from "./page/question/TrueFalse_Question";
+import Arrange_Question from "./page/question/Arrange_Question";
+import Do_Test from "./page/Do_Test";
+import MultipleAnswer from "./component/popup/MultipleAnswer";
 const AppTotal = () => {
     return (
         <Router>
@@ -21,6 +25,7 @@ const AppTotal = () => {
                     <Route path="/metadata" element={<Metadata />} />
                     <Route path="/manager" element={< Question_Manager />} />
                     <Route path="/oneanswer" element={< OneAnswer />} />
+                    <Route path="/multipleanswer" element={< MultipleAnswer />} />
                     <Route path="/compare_number" element={< Compare_Number />} />
                     <Route path="/essay_question" element={< EssayQuestion />} />
                     <Route path="/true_false" element={< TrueFalse />} />
@@ -30,6 +35,9 @@ const AppTotal = () => {
                     <Route path="/selected_word" element={< Selected_Word />} />
                     <Route path="/record" element={< Record />} />
                     <Route path="/select_question" element={< Select_Question />} />
+                    <Route path="/true_false_question" element={< TrueFalse_Question />} />
+                    <Route path="/arrange_question" element={< Arrange_Question />} />
+                    <Route path="/do_test" element={< Do_Test />} />
                     <Route path="/test" element={< ManagerQuestion />} />
                 </Routes>
             </div>

@@ -14,6 +14,7 @@ import Editor from "../../page/library/Editor";
 import StarIcon from "@mui/icons-material/Star";
 import ManagerQuestion from "../ManagerQuestion";
 import JoditEditor from "jodit-react";
+import Test1 from "../../page/library/Test1";
 
 const Selected_Word = () => {
   const editor = useRef(null);
@@ -83,12 +84,7 @@ const Selected_Word = () => {
             Đáp án:
           </Typography>
           <Box sx={{ height: "auto" }}>
-            <JoditEditor
-              ref={editor}
-              value={content}
-              onChange={(newContent) => setContent(newContent)}
-              onMouseUp={handleContent}
-            />
+            <Editor />
           </Box>
         </Box>
         <Box mt={3} align="right">

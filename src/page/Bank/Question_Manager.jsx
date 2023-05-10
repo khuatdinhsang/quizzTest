@@ -32,6 +32,7 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import DeleteForeverOutlinedIcon from "@mui/icons-material/DeleteForeverOutlined";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import { Link } from "react-router-dom";
+import ManagerQuestion from "../../component/ManagerQuestion";
 const Question_Manager = () => {
   const [openExcel, setOpenExcel] = React.useState(false);
   const handleOpenExcel = () => setOpenExcel(true);
@@ -96,97 +97,9 @@ const Question_Manager = () => {
           <Divider
             sx={{ marginBottom: "20px", borderBottom: "2px solid #ccc" }}
           />
-          <Stack
-            sx={{
-              flexDirection: "row",
-              justifyContent: "space-between",
-              marginBottom: "10px",
-            }}
-          >
-            <TextField
-              size="small"
-              sx={{ marginBottom: "10px", width: "150px" }}
-              required
-              select
-              value="0"
-            >
-              <MenuItem value="0">Loại câu hỏi</MenuItem>
-              <MenuItem value="1" selected>
-                Có
-              </MenuItem>
-              <MenuItem value="2">Không</MenuItem>
-            </TextField>
-            <TextField
-              size="small"
-              sx={{ marginBottom: "10px", width: "150px" }}
-              required
-              select
-              value="0"
-            >
-              <MenuItem value="0">Loại câu hỏi</MenuItem>
-              <MenuItem value="1" selected>
-                Có
-              </MenuItem>
-              <MenuItem value="2">Không</MenuItem>
-            </TextField>
-            <TextField
-              size="small"
-              sx={{ marginBottom: "10px", width: "150px" }}
-              required
-              select
-              value="0"
-            >
-              <MenuItem value="0">Loại câu hỏi</MenuItem>
-              <MenuItem value="1" selected>
-                Có
-              </MenuItem>
-              <MenuItem value="2">Không</MenuItem>
-            </TextField>
-            <TextField
-              size="small"
-              sx={{ marginBottom: "10px", width: "150px" }}
-              required
-              select
-              value="0"
-            >
-              <MenuItem value="0">Loại câu hỏi</MenuItem>
-              <MenuItem value="1" selected>
-                Có
-              </MenuItem>
-              <MenuItem value="2">Không</MenuItem>
-            </TextField>
-            <TextField
-              size="small"
-              sx={{ marginBottom: "10px", width: "150px" }}
-              required
-              select
-              value="0"
-            >
-              <MenuItem value="0">Loại câu hỏi</MenuItem>
-              <MenuItem value="1" selected>
-                Có
-              </MenuItem>
-              <MenuItem value="2">Không</MenuItem>
-            </TextField>
-            <TextField
-              size="small"
-              sx={{ marginBottom: "10px", width: "150px" }}
-              required
-              select
-              value="2"
-            >
-              <MenuItem value="0">Loại câu hỏi</MenuItem>
-              <MenuItem value="1" selected>
-                Có
-              </MenuItem>
-              <MenuItem value="2">Không</MenuItem>
-            </TextField>
-            <Button sx={{ height: "40px" }} variant="contained">
-              Tìm kiếm
-            </Button>
-          </Stack>
+          <ManagerQuestion />
 
-          <Box className="flex">
+          <Box className="flex" sx={{ marginTop: "30px" }}>
             <Box className="flex" sx={{ marginRight: "50px", fontWeight: 600 }}>
               <Icon sx={{ color: "blue" }}>
                 <AddCircleOutlinedIcon />,

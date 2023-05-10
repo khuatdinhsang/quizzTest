@@ -15,7 +15,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
 
-const Select_Question = () => {
+const Arrange_Question = () => {
   return (
     <Box>
       <Typography
@@ -33,7 +33,7 @@ const Select_Question = () => {
       </Typography>
       <Box sx={{ padding: "20px 150px" }}>
         <Typography sx={{ marginBottom: "30px" }} textAlign="right">
-          Trắc nghiệm (1 đáp án )
+          Sắp xếp thành câu hoàn chỉnh
         </Typography>
         <Box sx={{ marginBottom: "30px", color: "#565656" }}>
           <Typography
@@ -43,9 +43,7 @@ const Select_Question = () => {
             1.
           </Typography>
           <Typography variant="span">
-            Làm thế nào để hiển thị viền 1 phần tử với kích thước đường viền như
-            sau: The top border = 10 pixels the bottom border = 5 pixels the
-            left border = 20 pixels the right border = 1pixel?
+            Sắp xếp các từ dưới đây thành câu có ý nghĩa:
           </Typography>
           <FormControl
             sx={{ marginLeft: "50px", marginTop: "10px", display: "block" }}
@@ -371,4 +369,4 @@ const Select_Question = () => {
   );
 };
 
-export default Select_Question;
+export default Arrange_Question;
