@@ -17,6 +17,7 @@ import TrueFalse_Question from "./page/question/TrueFalse_Question";
 import Arrange_Question from "./page/question/Arrange_Question";
 import Do_Test from "./page/Do_Test";
 import MultipleAnswer from "./component/popup/MultipleAnswer";
+import Test1 from "./page/library/Test1";
 const AppTotal = () => {
     return (
         <Router>
@@ -38,7 +39,7 @@ const AppTotal = () => {
                     <Route path="/true_false_question" element={< TrueFalse_Question />} />
                     <Route path="/arrange_question" element={< Arrange_Question />} />
                     <Route path="/do_test" element={< Do_Test />} />
-                    <Route path="/test" element={< ManagerQuestion />} />
+                    <Route path="/test" element={< Test1 />} />
                 </Routes>
             </div>
         </Router>

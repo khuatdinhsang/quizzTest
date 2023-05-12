@@ -216,26 +216,7 @@ const Do_Test = () => {
               <Typography variant="span">
                 Sắp xếp các từ dưới đây thành câu có nghĩa
               </Typography>
-              <FormControl
-                sx={{ marginLeft: "50px", marginTop: "10px", display: "block" }}
-              >
-                <RadioGroup
-                  aria-labelledby="demo-radio-buttons-group-label"
-                  defaultValue="female"
-                  name="radio-buttons-group"
-                >
-                  <FormControlLabel
-                    value="true"
-                    control={<Radio />}
-                    label="Đúng"
-                  />
-                  <FormControlLabel
-                    value="false"
-                    control={<Radio />}
-                    label="Sai"
-                  />
-                </RadioGroup>
-              </FormControl>
+
               <Divider sx={{ marginTop: "15px" }} />
             </Box>
           </Box>

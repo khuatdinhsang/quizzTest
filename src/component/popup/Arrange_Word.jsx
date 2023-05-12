@@ -93,7 +93,7 @@ const Arrange_Word = () => {
           </Button>
         </Box>
         <Stack flexWrap="wrap" flexDirection="row" sx={{ marginTop: "30px" }}>
-          <Box sx={{ marginRight: "20px", marginBottom: "20px" }}>
+          <Box sx={{ marginRight: "15px", marginBottom: "20px" }}>
             <Typography variant="span">1.</Typography>
             <Box
               sx={{
@@ -109,7 +109,7 @@ const Arrange_Word = () => {
               <Typography>Một</Typography>
             </Box>
           </Box>
-          <Box sx={{ marginRight: "20px", marginBottom: "20px" }}>
+          <Box sx={{ marginRight: "15px", marginBottom: "20px" }}>
             <Typography variant="span">1.</Typography>
             <Box
               sx={{
@@ -125,7 +125,7 @@ const Arrange_Word = () => {
               <Typography>Một</Typography>
             </Box>
           </Box>
-          <Box sx={{ marginRight: "20px", marginBottom: "20px" }}>
+          <Box sx={{ marginRight: "15px", marginBottom: "20px" }}>
             <Typography variant="span">1.</Typography>
             <Box
               sx={{
@@ -141,7 +141,7 @@ const Arrange_Word = () => {
               <Typography>Một</Typography>
             </Box>
           </Box>
-          <Box sx={{ marginRight: "20px", marginBottom: "20px" }}>
+          <Box sx={{ marginRight: "15px", marginBottom: "20px" }}>
             <Typography variant="span">1.</Typography>
             <Box
               sx={{
@@ -157,7 +157,7 @@ const Arrange_Word = () => {
               <Typography>Một</Typography>
             </Box>
           </Box>
-          <Box sx={{ marginRight: "20px", marginBottom: "20px" }}>
+          <Box sx={{ marginRight: "15px", marginBottom: "20px" }}>
             <Typography variant="span">1.</Typography>
             <Box
               sx={{
@@ -173,7 +173,7 @@ const Arrange_Word = () => {
               <Typography>Một</Typography>
             </Box>
           </Box>
-          <Box sx={{ marginRight: "20px", marginBottom: "20px" }}>
+          <Box sx={{ marginRight: "15px", marginBottom: "20px" }}>
             <Typography variant="span">1.</Typography>
             <Box
               sx={{
@@ -189,7 +189,7 @@ const Arrange_Word = () => {
               <Typography>Một</Typography>
             </Box>
           </Box>
-          <Box sx={{ marginRight: "20px", marginBottom: "20px" }}>
+          <Box sx={{ marginRight: "15px", marginBottom: "20px" }}>
             <Typography variant="span">1.</Typography>
             <Box
               sx={{

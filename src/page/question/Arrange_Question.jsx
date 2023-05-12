@@ -301,70 +301,7 @@ const Arrange_Question = () => {
           </Stack>
         </Stack>
       </Box>
-
-      <Stack flexDirection="row" justifyContent="center" mb={5}>
-        <Box>
-          <Link
-            to="/"
-            style={{
-              padding: " 20px 30px",
-              display: "inline-block",
-              textDecoration: "none",
-              borderRadius: "30px 0 0 30px",
-              color: "#36CA68",
-              background: "#F3F3F3",
-            }}
-          >
-            Trắc nghiệm (1 đáp án)
-          </Link>
-        </Box>
-        <Box>
-          <Link
-            to="/"
-            style={{
-              padding: " 20px 30px",
-              display: "inline-block",
-              textDecoration: "none",
-              color: "#36CA68",
-              background: "white",
-              borderLeft: "1px solid white",
-            }}
-          >
-            Nối từ
-          </Link>
-        </Box>
-        <Box>
-          <Link
-            to="/"
-            style={{
-              padding: " 20px 30px",
-              display: "inline-block",
-              textDecoration: "none",
-              color: "#36CA68",
-              background: "#F3F3F3",
-              borderLeft: "1px solid white",
-            }}
-          >
-            Sắp xếp câu
-          </Link>
-        </Box>
-        <Box>
-          <Link
-            to="/"
-            style={{
-              padding: " 20px 30px",
-              display: "inline-block",
-              textDecoration: "none",
-              borderRadius: "0 30px 30px 0",
-              color: "#36CA68",
-              background: "#F3F3F3",
-              borderLeft: "1px solid white",
-            }}
-          >
-            Trắc nghiệm (nhiều đáp án)
-          </Link>
-        </Box>
-      </Stack>
+      <Stack></Stack>
     </Box>
   );
 };
