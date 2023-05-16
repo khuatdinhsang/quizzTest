@@ -24,8 +24,7 @@ const Editor = () => {
     };
     function handleInsertAudio() {
         const audioElement = `<audio controls src="${audio}"></audio>`;
-        const audioElement1 = `<p>Sang</p>`;
-        editor.current?.editor?.insertHTML(audioElement1);
+        editor.current?.editor?.insertHTML(audioElement);
     }
     return (
         <Box sx={{ height: 'auto' }}>

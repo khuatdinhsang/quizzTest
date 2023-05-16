@@ -18,6 +18,12 @@ import Arrange_Question from "./page/question/Arrange_Question";
 import Do_Test from "./page/Do_Test";
 import MultipleAnswer from "./component/popup/MultipleAnswer";
 import Test1 from "./page/library/Test1";
+import ViewListExam from "./page/CreateTest/ViewListExam";
+import ViewDetailExam from "./page/CreateTest/ViewDetailExam";
+import Confirm_Create_Exam from "./component/popup/Confirm_Create_Exam";
+import Create_Success from "./component/popup/Create_Success";
+import Warning from "./component/popup/Warning";
+import Create_Exam from "./component/popup/Create_Exam";
 const AppTotal = () => {
     return (
         <Router>
@@ -26,7 +32,7 @@ const AppTotal = () => {
                     <Route path="/metadata" element={<Metadata />} />
                     <Route path="/manager" element={< Question_Manager />} />
                     <Route path="/oneanswer" element={< OneAnswer />} />
-                    <Route path="/multipleanswer" element={< MultipleAnswer />} />
+                    <Route path="/multiple_answer" element={< MultipleAnswer />} />
                     <Route path="/compare_number" element={< Compare_Number />} />
                     <Route path="/essay_question" element={< EssayQuestion />} />
                     <Route path="/true_false" element={< TrueFalse />} />
@@ -39,6 +45,12 @@ const AppTotal = () => {
                     <Route path="/true_false_question" element={< TrueFalse_Question />} />
                     <Route path="/arrange_question" element={< Arrange_Question />} />
                     <Route path="/do_test" element={< Do_Test />} />
+                    <Route path="/view_list_exam" element={< ViewListExam />} />
+                    <Route path="/view_detail_exam" element={< ViewDetailExam />} />
+                    <Route path="/confirm_create_exam_popup" element={<Confirm_Create_Exam />} />
+                    <Route path="/create_success_popup" element={< Create_Success />} />
+                    <Route path="/warning" element={< Warning />} />
+                    <Route path="/create_exam_popup" element={< Create_Exam />} />
                     <Route path="/test" element={< Test1 />} />
                 </Routes>
             </div>
