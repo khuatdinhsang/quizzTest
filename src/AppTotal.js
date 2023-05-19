@@ -24,6 +24,13 @@ import Confirm_Create_Exam from "./component/popup/Confirm_Create_Exam";
 import Create_Success from "./component/popup/Create_Success";
 import Warning from "./component/popup/Warning";
 import Create_Exam from "./component/popup/Create_Exam";
+import Confirm_Point from "./component/popup/Confirm_Point";
+import Warning_Over_Point from "./component/popup/Warning_Over_Point";
+import CreateExamManually from "./page/CreateTest/CreateExamManually";
+import CreateExamAutomatic from "./page/CreateTest/CreateExamAutomatic";
+import Draft_Exam from "./component/popup/Draft_Exam";
+import Quizz_Management from "./page/CreateTest/Quizz_Management";
+import TestSetUp from "./page/CreateTest/TestSetUp";
 const AppTotal = () => {
     return (
         <Router>
@@ -51,6 +58,13 @@ const AppTotal = () => {
                     <Route path="/create_success_popup" element={< Create_Success />} />
                     <Route path="/warning" element={< Warning />} />
                     <Route path="/create_exam_popup" element={< Create_Exam />} />
+                    <Route path="/confirm_point" element={< Confirm_Point />} />
+                    <Route path="/warning_over_point" element={< Warning_Over_Point />} />
+                    <Route path="/create_exam_manually" element={< CreateExamManually />} />
+                    <Route path="/create_exam_automatic" element={< CreateExamAutomatic />} />
+                    <Route path="/draft_exam" element={< Draft_Exam />} />
+                    <Route path="/quizz_manager" element={< Quizz_Management />} />
+                    <Route path="/test_setup" element={< TestSetUp />} />
                     <Route path="/test" element={< Test1 />} />
                 </Routes>
             </div>

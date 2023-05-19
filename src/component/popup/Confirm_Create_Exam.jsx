@@ -59,7 +59,7 @@ const Confirm_Create_Exam = () => {
           Bạn có chắc chắn muốn tạo bài kiểm tra này không?
         </Typography>
         <Grid container sx={{ marginTop: "30px", color: "#4D4D4D" }}>
-          <Grid xs={7}>
+          <Grid xs={8}>
             <Box>
               <Stack flexDirection="row">
                 <Typography>Tên bài kiểm tra: </Typography>
@@ -100,7 +100,7 @@ const Confirm_Create_Exam = () => {
               </FormControl>
             </Box>
           </Grid>
-          <Grid xs={5}>
+          <Grid xs={4}>
             <Box>
               <Stack flexDirection="row">
                 <Typography>Lượt thi tối đa: </Typography>
