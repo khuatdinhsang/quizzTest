@@ -31,6 +31,10 @@ import CreateExamAutomatic from "./page/CreateTest/CreateExamAutomatic";
 import Draft_Exam from "./component/popup/Draft_Exam";
 import Quizz_Management from "./page/CreateTest/Quizz_Management";
 import TestSetUp from "./page/CreateTest/TestSetUp";
+import ViewTest from "./page/User/ViewTest";
+import Start_Exam from "./component/popup/Start_Exam";
+import View_Result from "./component/popup/View_Result";
+import ViewDetailTest from "./page/User/ViewDetailTest";
 const AppTotal = () => {
     return (
         <Router>
@@ -65,6 +69,12 @@ const AppTotal = () => {
                     <Route path="/draft_exam" element={< Draft_Exam />} />
                     <Route path="/quizz_manager" element={< Quizz_Management />} />
                     <Route path="/test_setup" element={< TestSetUp />} />
+
+                    {/* User                        */}
+                    <Route path="/view_test" element={< ViewTest />} />
+                    <Route path="/start_exam" element={< Start_Exam />} />
+                    <Route path="/view_result_exam" element={< View_Result />} />
+                    <Route path="/user_view_detail_exam" element={< ViewDetailTest />} />
                     <Route path="/test" element={< Test1 />} />
                 </Routes>
             </div>

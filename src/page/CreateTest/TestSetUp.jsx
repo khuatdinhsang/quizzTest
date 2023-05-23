@@ -275,7 +275,7 @@ const TestSetUp = () => {
                 sx={{
                   width: "310px",
                   border: "1px solid #ccc",
-                  boxShadow: "0 1px 5px 0 ",
+                  boxShadow: " 2px 2px 10px #1976d2 ",
                 }}
               >
                 <List>
@@ -331,7 +331,7 @@ const TestSetUp = () => {
                     width: "320px",
                     background: "white",
                     zIndex: "100",
-                    boxShadow: "0 0 5px 0",
+                    boxShadow: " 2px 2px 10px #1976d2",
                   }}
                 >
                   {data1.map((item) => {
